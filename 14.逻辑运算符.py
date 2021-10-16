@@ -57,3 +57,8 @@ result = 0 and 1 # 0
 #   False and False
 result = 0 and None # 0
 print((result))
+
+# 逻辑运算符（补充）
+# 逻辑运算符可以连着使用
+result = 1 < 2 < 3 # 相当于1 < 2 and 2 < 3
+print(result)

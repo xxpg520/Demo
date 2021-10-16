@@ -1,9 +1,27 @@
 a = 10
-b = 20
+b = 40
 c = 30
 
 #  通过条件运算符获取三个值中的最大值
-max = a if a > b else b
-max = max if max >c else c
+# max = a if a > b else b
+# max = max if max >c else c
 
-print(max)
+max = a if (a > b and a > c) else (b if b > c else c)  # 不推荐使用
+
+# print(max)
+
+# 运算符的优先级
+# 和数学中一样，在Python运算也有优先级，比如先乘除 后加减
+# 运算符的优先级可以根据优先级的表格来查询
+#  在表格中位置越靠下的运算符优先级越高，优先级越高的月有限计算
+#  如果优先级一样则自左向右计算
+a = 1 + 2 * 3
+
+# 一样 and高 or高
+# 如果or的优先级高，或者两个运算符的优先级一样高
+#   则需要先进行或运算
+# 如果and的优先级高，则应该先计算与运算
+#   则运算结果是1
+a = (1 or 2) and 3
+
+print(a)
