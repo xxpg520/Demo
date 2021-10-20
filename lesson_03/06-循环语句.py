@@ -15,7 +15,6 @@
 # 条件表达式恒为True的循环语句,称为死循环,它会一直运行,慎用!
 # while True :
 #     print('hello')
-
 # 循环的三个要件(表达式)
 # 初始化表达式,通过初始化表达式初始化一个变量
 # i = 0
@@ -34,6 +33,19 @@
 # else:
 #     print('else中的代码块')
 
+numb = 0
+flag = 0
+while numb < 100:
+    flag += numb
+    numb += 1
+
+print(flag)
+
+
+
+
+
+
 # 练习1:
 #   求100以内所有的奇数之和
 # numb = 0
@@ -51,10 +63,10 @@
 #     i += 2
 
 # 练习100以内所有7的倍数之和,以及个数
-numb = 0
-i = 1
-while i < 100 :
-    if i % 7 == 0:
-        numb += i
-    i += 1
-print(numb)
+# numb = 0
+# i = 1
+# while i < 100 :
+#     if i % 7 == 0:
+#         numb += i
+#     i += 1
+# print(numb)
