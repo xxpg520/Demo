@@ -15,6 +15,5 @@ while i < 9:
     j = 0
     while j < i:
         j += 1
-        print(f'{j}*{i}={i*j}',end = '   ')
+        print(f'{j}*{i}={i * j}', end='       ')
     print()
-
