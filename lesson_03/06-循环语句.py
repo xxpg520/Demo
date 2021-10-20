@@ -15,6 +15,8 @@
 # 条件表达式恒为True的循环语句,称为死循环,它会一直运行,慎用!
 # while True :
 #     print('hello')
+#
+#
 # 循环的三个要件(表达式)
 # 初始化表达式,通过初始化表达式初始化一个变量
 # i = 0
@@ -27,19 +29,20 @@
 
 # 创建一个执行十次的循环
 # i = 0
-# while i < 10:
+# while i <10:
 #     i += 1
 #     print(i,'hello')
-# else:
-#     print('else中的代码块')
 
-numb = 0
-flag = 0
-while numb < 100:
-    flag += numb
-    numb += 1
+# 练习
+# 求100以内所有数之和
 
-print(flag)
+i = 0
+j = 0
+while i < 100:
+    i += 1
+    print(i)
+    j +=i
+print(j)
 
 
 
